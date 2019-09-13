@@ -5,10 +5,11 @@ import validate from 'validate.js'
 import { makeStyles } from '@material-ui/styles'
 import {
     Grid,
-    Typography,
     Button,
     TextField,
 } from '@material-ui/core'
+
+import { userApi } from '../../services/api'
 
 //Schema do formulário
 const schema = {
@@ -201,6 +202,7 @@ const SignIn = props => {
                             >
                                 <img
                                     className={classes.logoImage}
+                                    alt="Logo"
                                     src="/images/logos/logo192x192.png"
                                 />
                                 <TextField
